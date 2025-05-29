@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Dialogue_Group" load_steps=7 format=3 uid="uid://cq3lwpcnpwj1w"]
+
+[ext_resource type="Script" uid="uid://cvvbvdth05shp" path="res://Scripts/dialogue.gd" id="1_rgqhl"]
+[ext_resource type="Script" uid="uid://d0f0cqxxfxv1a" path="res://Scripts/dialogue_group.gd" id="2_en56j"]
+[ext_resource type="Texture2D" uid="uid://cqgysf2jkddi2" path="res://Assets/Teresa.png" id="2_pxpp3"]
+[ext_resource type="Texture2D" uid="uid://ds5gd1odky3dk" path="res://Assets/Erza.png" id="3_pxpp3"]
+
+[sub_resource type="Resource" id="Resource_0y76y"]
+script = ExtResource("1_rgqhl")
+character_name = "Terasa"
+content = "你好，勇士！我叫特蕾莎，请问你是要去前面的荒野吗？"
+avatar = ExtResource("2_pxpp3")
+show_on_left = true
+metadata/_custom_type_script = "uid://cvvbvdth05shp"
+
+[sub_resource type="Resource" id="Resource_g74tx"]
+script = ExtResource("1_rgqhl")
+character_name = "Erza"
+content = "我是要去荒野的高塔，斩杀一条恶龙。你去荒野干什么？"
+avatar = ExtResource("3_pxpp3")
+show_on_left = false
+metadata/_custom_type_script = "uid://cvvbvdth05shp"
+
+[resource]
+script = ExtResource("2_en56j")
+dialogue_list = Array[ExtResource("1_rgqhl")]([SubResource("Resource_0y76y"), SubResource("Resource_g74tx")])
+metadata/_custom_type_script = "uid://d0f0cqxxfxv1a"

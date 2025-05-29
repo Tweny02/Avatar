@@ -10,6 +10,14 @@ config_version=5
 
 [application]
 
-config/name="The Mystery of the Town"
+config/name="Avatar"
+config/tags=PackedStringArray("develop")
+run/main_scene="uid://bdkb4iu36o38r"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "yellow"
+}
