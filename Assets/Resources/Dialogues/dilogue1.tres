@@ -1,8 +1,8 @@
-[gd_resource type="Resource" script_class="Dialogue_Group" load_steps=7 format=3 uid="uid://cq3lwpcnpwj1w"]
+[gd_resource type="Resource" script_class="Dialogue_Group" load_steps=8 format=3 uid="uid://cq3lwpcnpwj1w"]
 
 [ext_resource type="Script" uid="uid://cvvbvdth05shp" path="res://Scripts/dialogue.gd" id="1_rgqhl"]
 [ext_resource type="Script" uid="uid://d0f0cqxxfxv1a" path="res://Scripts/dialogue_group.gd" id="2_en56j"]
-[ext_resource type="Texture2D" uid="uid://cqgysf2jkddi2" path="res://Assets/Teresa.png" id="2_pxpp3"]
+[ext_resource type="Texture2D" uid="uid://cqgysf2jkddi2" path="res://Assets/Neresa.png" id="2_pxpp3"]
 [ext_resource type="Texture2D" uid="uid://ds5gd1odky3dk" path="res://Assets/Erza.png" id="3_pxpp3"]
 
 [sub_resource type="Resource" id="Resource_0y76y"]
@@ -21,7 +21,15 @@ avatar = ExtResource("3_pxpp3")
 show_on_left = false
 metadata/_custom_type_script = "uid://cvvbvdth05shp"
 
+[sub_resource type="Resource" id="Resource_pxpp3"]
+script = ExtResource("1_rgqhl")
+character_name = "Nerasa"
+content = "我想去荒野的那个小镇，镇子上有我的弟弟，他被传送到哪里了。"
+avatar = ExtResource("2_pxpp3")
+show_on_left = true
+metadata/_custom_type_script = "uid://cvvbvdth05shp"
+
 [resource]
 script = ExtResource("2_en56j")
-dialogue_list = Array[ExtResource("1_rgqhl")]([SubResource("Resource_0y76y"), SubResource("Resource_g74tx")])
+dialogue_list = Array[ExtResource("1_rgqhl")]([SubResource("Resource_0y76y"), SubResource("Resource_g74tx"), SubResource("Resource_pxpp3")])
 metadata/_custom_type_script = "uid://d0f0cqxxfxv1a"

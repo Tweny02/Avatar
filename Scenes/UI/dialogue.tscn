@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bdkb4iu36o38r"]
+[gd_scene load_steps=6 format=3 uid="uid://bdkb4iu36o38r"]
 
 [ext_resource type="Script" uid="uid://dcvxp7veq1bw" path="res://Scripts/UI/dialogue_manager.gd" id="1_0nvb7"]
-[ext_resource type="Texture2D" uid="uid://cqgysf2jkddi2" path="res://Assets/Teresa.png" id="1_d5t14"]
+[ext_resource type="Texture2D" uid="uid://cqgysf2jkddi2" path="res://Assets/Neresa.png" id="1_d5t14"]
 [ext_resource type="Texture2D" uid="uid://ds5gd1odky3dk" path="res://Assets/Erza.png" id="2_0nvb7"]
 [ext_resource type="Resource" uid="uid://cq3lwpcnpwj1w" path="res://Assets/Resources/Dialogues/dilogue1.tres" id="2_15aj3"]
+[ext_resource type="Texture2D" uid="uid://bmou81bl6s73m" path="res://Assets/temple.PNG" id="3_tg5y5"]
 
 [node name="Control" type="Control" node_paths=PackedStringArray("character_name_text", "text_box", "left_avatar", "right_avatar")]
 layout_mode = 3
@@ -18,6 +19,15 @@ text_box = NodePath("HBoxContainer/Panel/MarginContainer/VBoxContainer/content")
 left_avatar = NodePath("HBoxContainer/LeftAvatar")
 right_avatar = NodePath("HBoxContainer/RightAvatar")
 main_dialogue = ExtResource("2_15aj3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 2.0
+offset_top = -362.0
+offset_right = 1656.0
+offset_bottom = 662.0
+texture = ExtResource("3_tg5y5")
+stretch_mode = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -64,7 +74,7 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 theme_override_font_sizes/font_size = 18
 text = "content"
-autowrap_mode = 1
+autowrap_mode = 3
 
 [node name="RightAvatar" type="TextureRect" parent="HBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
